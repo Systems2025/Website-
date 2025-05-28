@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Sky Signature Tee - Blue Sky Kenya Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="product-detail-page brf-layout"> <!-- Added brf-layout class -->
+
+    <!-- Top Bar (Can be omitted for a more minimalist BR.F header) -->
+    <!-- <div class="top-bar"> ... </div> -->
+
+    <!-- Header (Adapted for BR.F style) -->
+    <header class="brf-main-header">
+        <div class="container brf-header-container">
+            <a href="index.html" class="logo brf-logo">BlueSky<span>Kenya</span></a>
+            <nav class="brf-main-nav">
+                <ul>
+                    <li><a href="shop-category-apparel.html">Apparel</a></li>
+                    <li><a href="shop-category-gear.html">Gear</a></li>
+                    <li><a href="shop-category-climb.html">Climb</a></li>
+                    <li><a href="shop-category-camp.html">Camp</a></li>
+                    <li><a href="shop.html">New</a></li>
+                    <li><a href="shop-sale.html" class="sale-link">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="brf-header-actions">
+                <form class="brf-search-form">
+                    <input type="search" placeholder="Search products...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <a href="cart.html" class="brf-action-icon" aria-label="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="brf-cart-count">0</span>
+                </a>
+                <a href="wishlist.html" class="brf-action-icon" aria-label="Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <a href="account.html" class="brf-action-icon" aria-label="My Account">
+                    <i class="far fa-user-circle"></i>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle brf-mobile-toggle">☰</button> <!-- Ensure styling for this if header is different -->
+        </nav>
+    </header>
+
+    <main class="brf-product-main-content">
+        <div class="container">
+            <div class="brf-breadcrumbs">
+                <a href="shop.html">Shop</a> / <a href="shop-category-apparel.html">Apparel</a> / <span>Blue Sky Signature Tee</span>
+            </div>
+
+            <div class="brf-product-layout">
+                <!-- Product Gallery -->
+                <div class="brf-product-gallery">
+                    <div class="brf-main-image">
+                        <img src="images/merch-tshirt-blue-large.jpg" alt="Blue Sky Signature Tee - Ocean Blue" id="brfMainProductImage">
+                        <!-- Make sure 'images/merch-tshirt-blue-large.jpg' exists -->
+                    </div>
+                    <div class="brf-thumbnail-strip">
+                        <div class="brf-thumbnail active" onclick="changeBrfMainImage('images/merch-tshirt-blue-large.jpg', this)">
+                            <img src="images/merch-tshirt-blue-thumb1.jpg" alt="T-Shirt Blue Thumbnail 1">
+                        </div>
+                        <div class="brf-thumbnail" onclick="changeBrfMainImage('images/merch-tshirt-grey-large.jpg', this)">
+                            <img src="images/merch-tshirt-grey-thumb.jpg" alt="T-Shirt Grey Thumbnail">
+                        </div>
+                        <div class="brf-thumbnail" onclick="changeBrfMainImage('images/merch-tshirt-blue-detail2.jpg', this)">
+                            <img src="images/merch-tshirt-blue-thumb2.jpg" alt="T-Shirt Blue Detail Thumbnail">
+                        </div>
+                        <div class="brf-thumbnail" onclick="changeBrfMainImage('images/merch-tshirt-blue-detail3.jpg', this)">
+                            <img src="images/merch-tshirt-blue-thumb3.jpg" alt="T-Shirt Blue Back Thumbnail">
+                        </div>
+                        <!-- <div class="brf-thumbnail brf-thumbnail-more">+2 more</div> -->
+                    </div>
+                </div>
+
+                <!-- Product Information -->
+                <div class="brf-product-info">
+                    <div class="brf-product-brand">
+                        <!-- <img src="images/bluesky-logo-icon.png" alt="Blue Sky Kenya Logo"> -->
+                        <span>Blue Sky Kenya Official</span>
+                    </div>
+                    <h1 class="brf-product-title">Shoes Reebok Zig Kinetica 3</h1> <!-- Example title from image -->
+                    <!-- <h1 class="brf-product-title">Blue Sky Signature Tee</h1> -->
+                    <span class="brf-product-sku">SKU: BSK-TEE-001</span>
+
+                    <div class="brf-product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span>42 reviews</span>
+                    </div>
+
+                    <div class="brf-product-price">KSh 2,500.00</div>
+
+                    <div class="brf-product-options">
+                        <div class="brf-option-group">
+                            <label class="brf-option-label">Color: <span id="selectedColorName">Ocean Blue</span></label>
+                            <div class="brf-color-swatches">
+                                <button class="brf-color-swatch active" data-color="Ocean Blue" data-image="images/merch-tshirt-blue-large.jpg" style="background-color: #0072BC;" onclick="selectBrfColor(this)"></button>
+                                <button class="brf-color-swatch" data-color="Heather Grey" data-image="images/merch-tshirt-grey-large.jpg" style="background-color: #B2BABB;" onclick="selectBrfColor(this)"></button>
+                                <!-- Add more colors -->
+                            </div>
+                        </div>
+
+                        <div class="brf-option-group">
+                            <label class="brf-option-label">Size: <span class="brf-size-type">EU Men</span></label>
+                            <div class="brf-size-selector">
+                                <button class="brf-size-btn" onclick="selectBrfSize(this)">S</button>
+                                <button class="brf-size-btn active" onclick="selectBrfSize(this)">M</button>
+                                <button class="brf-size-btn" onclick="selectBrfSize(this)">L</button>
+                                <button class="brf-size-btn" onclick="selectBrfSize(this)">XL</button>
+                                <button class="brf-size-btn" onclick="selectBrfSize(this)">XXL</button>
+                            </div>
+                            <a href="#" class="brf-size-guide-link">Size guide</a>
+                        </div>
+                    </div>
+
+                    <div class="brf-product-actions">
+                        <button class="btn brf-add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+                        <button class="btn brf-wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+
+                    <div class="brf-shipping-info">
+                        <i class="fas fa-truck"></i> Free delivery on orders over KSh 5,000
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lower sections: Description, Specs, Reviews (Can use accordion or separate sections) -->
+            <section class="brf-product-details-lower section-padding-sm">
+                <div class="brf-tabs">
+                    <button class="brf-tab-link active" onclick="openBrfTab(event, 'Description')">Description</button>
+                    <button class="brf-tab-link" onclick="openBrfTab(event, 'Specifications')">Specifications</button>
+                    <button class="brf-tab-link" onclick="openBrfTab(event, 'Reviews')">Reviews (42)</button>
+                </div>
+
+                <div id="Description" class="brf-tab-content" style="display:block;">
+                    <h3>Product Description</h3>
+                    <p>Experience ultimate comfort and style with the Blue Sky Signature Tee. Crafted from premium 100% organic cotton, this t-shirt is not just a piece of apparel, but a statement of your support for adventure and community empowerment. Featuring a modern fit and our iconic Blue Sky Kenya logo, it's perfect for everyday wear or your next outdoor escapade.</p>
+                    <ul>
+                        <li>Soft, breathable organic cotton.</li>
+                        <li>Durable print of the Blue Sky Kenya logo.</li>
+                        <li>Comfortable fit for all-day wear.</li>
+                        <li>Available in various sizes and inspiring colors.</li>
+                    </ul>
+                </div>
+
+                <div id="Specifications" class="brf-tab-content">
+                    <h3>Specifications</h3>
+                    <ul>
+                        <li><strong>Material:</strong> 100% Organic Cotton</li>
+                        <li><strong>Fit:</strong> Modern Regular Fit</li>
+                        <li><strong>Neckline:</strong> Crew Neck</li>
+                        <li><strong>Care:</strong> Machine wash cold, tumble dry low. Do not bleach. Iron on low heat if necessary, avoiding the print.</li>
+                        <li><strong>Origin:</strong> Ethically Sourced and Made in Kenya</li>
+                    </ul>
+                </div>
+
+                <div id="Reviews" class="brf-tab-content">
+                    <h3>Customer Reviews</h3>
+                    <div class="brf-review-summary">
+                        <!-- Add review summary here -->
+                    </div>
+                    <div class="brf-review-item">
+                        <!-- Individual review -->
+                    </div>
+                    <!-- Add more reviews or a "Read all reviews" link -->
+                </div>
+            </section>
+
+            <!-- Related Products Section (Can reuse .tactiko-product-grid or a new .brf-related-grid) -->
+            <section class="related-products-section section-padding-sm">
+                 <div class="section-header text-center">
+                    <h2>You Might Also Like</h2>
+                </div>
+                <div class="grid-4 tactiko-product-grid"> <!-- Reusing tactiko style for consistency or create brf-product-grid -->
+                    <!-- Product Card Examples -->
+                    <div class="tactiko-product-card">
+                        <div class="product-card-image"><a href="#"><img src="images/merch-hoodie.jpg" alt="Cozy Camp Hoodie"></a></div>
+                        <div class="product-card-content"><h3 class="product-title"><a href="#">Cozy Camp Hoodie</a></h3><div class="product-price">KSh 4,500</div></div>
+                    </div>
+                    <div class="tactiko-product-card">
+                        <div class="product-card-image"><a href="#"><img src="images/merch-cap.jpg" alt="Explorer Cap"></a></div>
+                        <div class="product-card-content"><h3 class="product-title"><a href="#">Explorer Cap</a></h3><div class="product-price">KSh 1,500</div></div>
+                    </div>
+                    <div class="tactiko-product-card">
+                        <div class="product-card-image"><a href="#"><img src="images/merch-waterbottle.jpg" alt="Adventure Water Bottle"></a></div>
+                        <div class="product-card-content"><h3 class="product-title"><a href="#">Adventure Water Bottle</a></h3><div class="product-price">KSh 1,800</div></div>
+                    </div>
+                    <div class="tactiko-product-card">
+                        <div class="product-card-image"><a href="#"><img src="images/merch-mug.jpg" alt="Campfire Mug"></a></div>
+                        <div class="product-card-content"><h3 class="product-title"><a href="#">Enamel Campfire Mug</a></h3><div class="product-price">KSh 1,200</div></div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer (Copy from other pages) -->
+    <footer class="new-footer">
+        <div class="container footer-content"> /* ... */ </div>
+        <div class="footer-bottom"><p>© <span id="currentYear"></span> Blue Sky Kenya.</p></div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        // Mobile menu (copy from other pages)
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle.brf-mobile-toggle'); // specific selector
+        const mainNav = document.querySelector('.brf-main-nav'); // specific selector
+        if (mobileMenuToggle && mainNav) {
+            mobileMenuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                // You might also want to toggle search and other actions or hide them
+            });
+        }
+
+
+        // BR.F Product Gallery
+        function changeBrfMainImage(newSrc, clickedThumbnail) {
+            document.getElementById('brfMainProductImage').src = newSrc;
+            const thumbnails = document.querySelectorAll('.brf-thumbnail');
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            clickedThumbnail.classList.add('active');
+        }
+
+        // BR.F Color Swatch Selection
+        function selectBrfColor(swatchElement) {
+            const colorName = swatchElement.dataset.color;
+            const imageName = swatchElement.dataset.image;
+            document.getElementById('selectedColorName').textContent = colorName;
+            document.getElementById('brfMainProductImage').src = imageName; // Change main image based on color
+
+            const swatches = document.querySelectorAll('.brf-color-swatch');
+            swatches.forEach(s => s.classList.remove('active'));
+            swatchElement.classList.add('active');
+
+            // Also update the first thumbnail to match the selected color's main image
+            const firstThumbnailImg = document.querySelector('.brf-thumbnail-strip .brf-thumbnail:first-child img');
+            const firstThumbnailDiv = document.querySelector('.brf-thumbnail-strip .brf-thumbnail:first-child');
+            if (firstThumbnailImg && firstThumbnailDiv) {
+                // Assuming your first thumbnail always corresponds to the main image of the selected color.
+                // You might need a more robust way to link swatches to specific thumbnails.
+                firstThumbnailImg.src = imageName.replace('-large.jpg', '-thumb1.jpg'); //  Adapt if naming convention differs
+                
+                const allThumbnails = document.querySelectorAll('.brf-thumbnail-strip .brf-thumbnail');
+                allThumbnails.forEach(thumb => thumb.classList.remove('active'));
+                firstThumbnailDiv.classList.add('active');
+            }
+        }
+
+        // BR.F Size Selection
+        function selectBrfSize(sizeButton) {
+            const sizeButtons = document.querySelectorAll('.brf-size-btn');
+            sizeButtons.forEach(btn => btn.classList.remove('active'));
+            sizeButton.classList.add('active');
+        }
+
+        // BR.F Tabs for Description, Specs, Reviews
+        function openBrfTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("brf-tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("brf-tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

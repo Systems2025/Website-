@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expeditions - Blue Sky Kenya</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct! -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="expedition-page uixshuvo-layout"> <!-- Page-specific class -->
+
+      <!-- Header (UIXSHUVO Style with Standard Navigation) -->
+    <header class="uixshuvo-main-header"> <!-- Keep this class for overall header styling if desired -->
+        <div class="container uixshuvo-header-container"> <!-- Keep for container styling -->
+            <a href="index.html" class="logo uixshuvo-logo">BlueSky<span>Kenya</span></a>
+
+            <!-- Standard Navigation Links -->
+            <nav class="main-nav uixshuvo-standard-nav"> <!-- Added main-nav for consistency and uixshuvo-standard-nav for potential specific tweaks -->
+                <ul class="nav-links"> <!-- Reusing your standard .nav-links structure -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="active">Departments <span class="arrow">▼</span></a> <!-- 'active' since this is a department page -->
+                        <ul class="dropdown-content">
+                            <li><a href="department-climb.html">Climb</a></li>
+                            <li><a href="department-camp.html">Camp BlueSky</a></li>
+                            <li><a href="department-expedition.html" class="active">Expedition</a></li> <!-- This specific page active -->
+                            <li><a href="department-teamdev.html">Team Development</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="uixshuvo-header-actions"> <!-- Keep UIXSHUVO actions styling -->
+                <button class="uixshuvo-search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <a href="contact.html#book-expedition" class="btn btn-primary uixshuvo-book-btn">Book Expedition</a>
+            </div>
+            <button class="mobile-menu-toggle uixshuvo-mobile-toggle">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Expedition Hero Section (UIXSHUVO Inspired) -->
+        <section class="uixshuvo-hero-section">
+            <div class="container">
+                <div class="uixshuvo-hero-grid">
+                    <div class="uixshuvo-hero-text-content">
+                        <div class="uixshuvo-hero-title-line">
+                            <h1>EXPLORE</h1>
+                            <div class="uixshuvo-hero-video-placeholder" style="background-image: url('images/expedition-video-thumb.jpg');">
+                                <!-- Make sure 'images/expedition-video-thumb.jpg' exists -->
+                                <!-- Can be an actual video or image -->
+                                <span class="video-play-icon-uix"><i class="fas fa-play"></i></span>
+                            </div>
+                        </div>
+                        <div class="uixshuvo-hero-title-line">
+                            <a href="#featured-expeditions" class="uixshuvo-arrow-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <h1>JOURNEYS</h1> <!-- Changed "WORLD" to "JOURNEYS" -->
+                        </div>
+                        <div class="uixshuvo-hero-decorative-shape">
+                            <!-- SVG or Image for the abstract shape (e.g., asterisk like) -->
+                            <i class="fas fa-asterisk"></i> <i class="fas fa-asterisk" style="opacity:0.7; margin-left:-5px;"></i>
+                        </div>
+                        <p class="uixshuvo-hero-description">
+                            Embark on transformative expeditions with Blue Sky Kenya. Discover breathtaking landscapes, rich cultures, and the thrill of adventure, all while fostering personal growth and connection.
+                        </p>
+                    </div>
+                    <div class="uixshuvo-hero-image-content">
+                        <div class="uixshuvo-hero-main-image" style="background-image: url('images/expedition-hero-main.jpg');">
+                            <!-- Make sure 'images/expedition-hero-main.jpg' exists -->
+                            <div class="uixshuvo-circular-text">
+                                <!-- JS or SVG needed for perfect circular text. Simple CSS approximation: -->
+                                <span class="char1">T</span><span class="char2">H</span><span class="char3">E</span><span class="char4"> </span><span class="char5">B</span><span class="char6">E</span><span class="char7">S</span><span class="char8">T</span><span class="char9"> </span><span class="char10">P</span><span class="char11">L</span><span class="char12">A</span><span class="char13">C</span><span class="char14">E</span><span class="char15"> </span><span class="char16">T</span><span class="char17">O</span><span class="char18"> </span><span class="char19">T</span><span class="char20">R</span><span class="char21">A</span><span class="char22">V</span><span class="char23">E</span><span class="char24">L</span><span class="char25"> </span><span class="char26">A</span><span class="char27">N</span><span class="char28">D</span><span class="char29"> </span><span class="char30">R</span><span class="char31">E</span><span class="char32">L</span><span class="char33">A</span><span class="char34">X</span><span class="char35"> </span><span class="char36">Y</span><span class="char37">O</span><span class="char38">U</span><span class="char39">R</span><span class="char40">S</span><span class="char41">E</span><span class="char42">L</span><span class="char43">F</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Stats/Intro Snippets Section -->
+        <section class="uixshuvo-intro-snippets section-padding-sm">
+            <div class="container">
+                <div class="uixshuvo-snippets-grid">
+                    <div class="snippet-card stat-snippet">
+                        <div class="snippet-icon-group">
+                            <img src="images/icon-map-pin-multi.png" alt="Travel places icon">
+                            <!-- Ensure 'images/icon-map-pin-multi.png' exists -->
+                        </div>
+                        <div class="snippet-text">
+                            <h4>50+</h4>
+                            <p>Unique Expedition Routes</p>
+                        </div>
+                    </div>
+                    <div class="snippet-card feature-snippet">
+                        <div class="snippet-text">
+                            <h4>Key Features</h4>
+                            <p>Expert guides, cultural immersion, safety first.</p>
+                        </div>
+                        <div class="snippet-icon-group overlapping-icons">
+                            <img src="images/icon-guide.png" alt="Guide Icon">
+                            <img src="images/icon-culture.png" alt="Culture Icon">
+                        </div>
+                    </div>
+                    <div class="snippet-card story-snippet">
+                        <div class="snippet-text">
+                            <h4>Our Expedition Ethos</h4>
+                            <p>Challenging journeys that build character, respect for nature, and create lifelong memories.</p>
+                        </div>
+                        <a href="about-expeditions.html" class="snippet-arrow-btn">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Featured Expeditions Section ("Discover the world") -->
+        <section id="featured-expeditions" class="uixshuvo-discover-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Discover Our Expeditions</h2>
+                    <p>Handpicked journeys to some of Kenya's most awe-inspiring destinations and beyond.</p>
+                </div>
+                <div class="grid-3 uixshuvo-expedition-grid">
+                    <!-- Expedition Card Example (Repeat 6+ times) -->
+                    <div class="uixshuvo-expedition-card">
+                        <div class="expedition-card-image">
+                            <img src="images/expedition-mt-kenya.jpg" alt="Mount Kenya Trek">
+                            <!-- Ensure image exists -->
+                        </div>
+                        <div class="expedition-card-content">
+                            <div class="expedition-location">
+                                <i class="fas fa-map-marker-alt"></i> Mount Kenya National Park, Kenya
+                            </div>
+                            <h3>Summit Challenge: Mount Kenya</h3>
+                            <div class="expedition-pricing-action">
+                                <span class="price-tag"><strong>KSh 45,000</strong> /person</span>
+                                <a href="expedition-mt-kenya-details.html" class="btn-details-uix">View Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uixshuvo-expedition-card">
+                        <div class="expedition-card-image">
+                            <img src="images/expedition-maasai-mara.jpg" alt="Maasai Mara Wildlife Safari">
+                        </div>
+                        <div class="expedition-card-content">
+                            <div class="expedition-location">
+                                <i class="fas fa-map-marker-alt"></i> Maasai Mara National Reserve, Kenya
+                            </div>
+                            <h3>Great Migration Safari</h3>
+                            <div class="expedition-pricing-action">
+                                <span class="price-tag"><strong>KSh 60,000</strong> /person</span>
+                                <a href="expedition-mara-details.html" class="btn-details-uix">View Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uixshuvo-expedition-card">
+                        <div class="expedition-card-image">
+                            <img src="images/expedition-turkana.jpg" alt="Lake Turkana Cultural Journey">
+                        </div>
+                        <div class="expedition-card-content">
+                            <div class="expedition-location">
+                                <i class="fas fa-map-marker-alt"></i> Lake Turkana, Northern Kenya
+                            </div>
+                            <h3>Cradle of Mankind Expedition</h3>
+                            <div class="expedition-pricing-action">
+                                <span class="price-tag"><strong>KSh 75,000</strong> /person</span>
+                                <a href="expedition-turkana-details.html" class="btn-details-uix">View Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add 3 more expedition cards for a 2-row layout -->
+                     <div class="uixshuvo-expedition-card">
+                        <div class="expedition-card-image">
+                            <img src="images/expedition-aberdares.jpg" alt="Aberdare Ranges Trek">
+                        </div>
+                        <div class="expedition-card-content">
+                            <div class="expedition-location">
+                                <i class="fas fa-map-marker-alt"></i> Aberdare National Park, Kenya
+                            </div>
+                            <h3>Highland Mist Trek</h3>
+                            <div class="expedition-pricing-action">
+                                <span class="price-tag"><strong>KSh 35,000</strong> /person</span>
+                                <a href="expedition-aberdares-details.html" class="btn-details-uix">View Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="uixshuvo-expedition-card">
+                        <div class="expedition-card-image">
+                            <img src="images/expedition-coast.jpg" alt="Coastal Exploration Dhow Safari">
+                        </div>
+                        <div class="expedition-card-content">
+                            <div class="expedition-location">
+                                <i class="fas fa-map-marker-alt"></i> Lamu Archipelago, Kenya Coast
+                            </div>
+                            <h3>Swahili Coast Dhow Safari</h3>
+                            <div class="expedition-pricing-action">
+                                <span class="price-tag"><strong>KSh 50,000</strong> /person</span>
+                                <a href="expedition-coast-details.html" class="btn-details-uix">View Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="uixshuvo-expedition-card">
+                        <div class="expedition-card-image">
+                            <img src="images/expedition-ogiek-trail.jpg" alt="Ogiek Cultural Trail">
+                        </div>
+                        <div class="expedition-card-content">
+                            <div class="expedition-location">
+                                <i class="fas fa-map-marker-alt"></i> Mau Forest Complex, Kenya
+                            </div>
+                            <h3>Ogiek Cultural Trail</h3>
+                            <div class="expedition-pricing-action">
+                                <span class="price-tag"><strong>KSh 30,000</strong> /person</span>
+                                <a href="expedition-ogiek-details.html" class="btn-details-uix">View Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="all-expeditions.html" class="btn btn-secondary">View All Expeditions</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. "Our Best Feature" / CTA Section -->
+        <section class="uixshuvo-best-feature-section section-padding bg-light">
+            <div class="container text-center">
+                <span class="sub-heading orange-text">Why Choose Us?</span>
+                <h2>Our Best Feature is the Journey Itself</h2>
+                <p style="max-width: 700px; margin: 0 auto 30px auto;">We craft expeditions that are more than just trips; they are experiences that challenge, inspire, and connect you deeply with the world and yourself. Our commitment to safety, local expertise, and sustainable travel sets us apart.</p>
+                <a href="contact.html#plan-expedition" class="btn btn-primary btn-lg">Plan Your Expedition Today</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="new-footer">
+        <!-- ... Footer content remains the same ... -->
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h4>BlueSky<span>Kenya</span></h4>
+                <p>Transformative outdoor experiences and team development programs in Kenya.</p>
+                 <div class="social-links-footer">
+                    <a href="#" aria-label="Facebook">FB</a> <a href="#" aria-label="Twitter">TW</a> <a href="#" aria-label="Instagram">IN</a> <a href="#" aria-label="LinkedIn">LI</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Explore Expeditions</h4>
+                <ul>
+                    <li><a href="expedition-mt-kenya-details.html">Mount Kenya Summit</a></li>
+                    <li><a href="expedition-mara-details.html">Maasai Mara Safari</a></li>
+                    <li><a href="expedition-turkana-details.html">Lake Turkana Journey</a></li>
+                    <li><a href="all-expeditions.html">All Expeditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <p>123 Adventure Rd, Nairobi, Kenya</p>
+                <p>Email: info@blueskykenya.org</p>
+                <p>Phone: +254 700 000 000</p>
+            </div>
+            <div class="footer-column">
+                <h4>Stay Updated</h4>
+                <p>Get news on upcoming trips, events & special offers.</p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" placeholder="Your Email Address" name="email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="currentYearExpedition"></span> Blue Sky Kenya. All Rights Reserved. Your Adventure Awaits.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYearExpedition').textContent = new Date().getFullYear();
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle.uixshuvo-mobile-toggle');
+        const mainNav = document.querySelector('.uixshuvo-main-nav');
+        if (mobileMenuToggle && mainNav) {
+            mobileMenuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                // May need to toggle search/book button visibility or position too
+                const actions = document.querySelector('.uixshuvo-header-actions');
+                if(actions) actions.classList.toggle('active-mobile');
+            });
+        }
+
+        // Smooth scroll for hero arrow button
+        const heroArrowBtn = document.querySelector('.uixshuvo-arrow-btn[href="#featured-expeditions"]');
+        if (heroArrowBtn) {
+            heroArrowBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetElement = document.querySelector('#featured-expeditions');
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        }
+
+        // Simple Circular Text JS (Basic approximation - for perfect circle, SVG textPath is better)
+        function applyCircularText(elementSelector, radius) {
+            const textElement = document.querySelector(elementSelector);
+            if (!textElement) return;
+            const text = textElement.innerText;
+            textElement.innerHTML = ''; // Clear original text
+            const characters = text.split('');
+            const angleIncrement = 360 / characters.length;
+
+            characters.forEach((char, i) => {
+                const span = document.createElement('span');
+                span.innerText = char;
+                const angle = angleIncrement * i - 90; // Start from top
+                const x = radius * Math.cos(angle * Math.PI / 180);
+                const y = radius * Math.sin(angle * Math.PI / 180);
+                
+                span.style.position = 'absolute';
+                span.style.left = '50%';
+                span.style.top = '50%';
+                // Adjust transform origin if text is not centered in span
+                span.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px) rotate(${angle + 90}deg)`;
+                textElement.appendChild(span);
+            });
+        }
+        // Example usage (adjust radius as needed based on image size and font size)
+        // applyCircularText('.uixshuvo-circular-text', 120); // Radius in pixels
+        // For better results with the circular text, consider using an SVG with a textPath element.
+        // This JS version is a very basic approximation and might need tweaking.
+    </script>
+</body>
+</html>

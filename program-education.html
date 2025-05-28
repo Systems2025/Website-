@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Programs - Blue Sky Kenya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Same navigation as index.html -->
+        <nav class="container">
+            <a href="index.html" class="logo">BlueSkyKenya</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="active">Our Work <span class="arrow">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="program-education.html" class="active">Education</a></li>
+                        <li><a href="program-health.html">Health Initiatives</a></li>
+                        <li><a href="program-environment.html">Environment</a></li>
+                    </ul>
+                </li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="donate.html" class="btn btn-primary">Donate Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Education Programs</h1>
+                <p>Investing in the future through quality learning opportunities.</p>
+            </div>
+        </section>
+
+        <section class="content-area">
+            <div class="container">
+                <img src="placeholder-education-main.jpg" alt="Children in a classroom" class="featured-image">
+
+                <h2>Building Foundations for Success</h2>
+                <p>Education is a cornerstone of development. At Blue Sky Kenya, we are dedicated to breaking down barriers to learning and providing children and youth with the tools they need to succeed. Our programs focus on access, quality, and supportive learning environments.</p>
+
+                <h3>Key Initiatives:</h3>
+                <ul>
+                    <li><strong>School Infrastructure Support:</strong> We help build and renovate classrooms, libraries, and sanitation facilities to create safe and conducive learning spaces.</li>
+                    <li><strong>Learning Materials & Resources:</strong> Providing textbooks, stationery, and digital learning tools to underserved schools and students.</li>
+                    <li><strong>Teacher Training & Development:</strong> Equipping educators with modern teaching methodologies and continuous professional development.</li>
+                    <li><strong>Scholarship Programs:</strong> Offering financial assistance to bright but needy students to pursue secondary and tertiary education.</li>
+                    <li><strong>Early Childhood Development:</strong> Supporting ECD centers to ensure children get a strong start in their educational journey.</li>
+                </ul>
+
+                <div class="grid-2" style="margin-top: 40px; gap: 20px;">
+                    <div>
+                        <img src="placeholder-school-building.jpg" alt="School building project" style="border-radius: 8px;">
+                    </div>
+                    <div>
+                        <h3>Impact Story: The [Village Name] School Transformation</h3>
+                        <p>Before our intervention, the children of [Village Name] learned in dilapidated structures. With community support and donor funding, we constructed three new classrooms and a library. Today, enrollment has doubled, and academic performance has significantly improved. Read more in our <a href="stories.html#village-school">stories section</a>.</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 40px;">How You Can Help Our Education Programs:</h3>
+                <p>Your contribution can make a real difference:</p>
+                <ul>
+                    <li><strong>$25</strong> can provide textbooks for a student for a year.</li>
+                    <li><strong>$100</strong> can contribute to a teacher's training workshop.</li>
+                    <li><strong>$500</strong> can help furnish a classroom with desks and chairs.</li>
+                </ul>
+                <a href="donate.html?program=education" class="btn btn-secondary" style="margin-top: 20px;">Support Education</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>BlueSkyKenya</h4>
+                    <p>Empowering communities, building brighter futures.</p>
+                    <p>© <span id="currentYear"></span> Blue Sky Kenya. All Rights Reserved.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="program-education.html">Our Work</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul class="social-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p>123 Charity Lane, Nairobi, Kenya<br>
+                       info@blueskykenya.org<br>
+                       +254 700 000 000</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>

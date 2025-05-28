@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Blue Sky Kenya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="checkout-page ecgo-layout"> <!-- Page-specific class -->
+
+    <!-- Minimalist Header for Checkout -->
+    <header class="checkout-header-ecgo">
+        <div class="container">
+            <div class="checkout-header-content">
+                <a href="index.html" class="logo ecgo-checkout-logo">BlueSky<span>Kenya</span></a>
+                <div class="checkout-steps-ecgo">
+                    <a href="cart.html">Shopping Bag</a> <i class="fas fa-chevron-right"></i>
+                    <span class="active-step">Checkout</span> <i class="fas fa-chevron-right inactive"></i>
+                    <span class="inactive-step">Confirmation</span>
+                </div>
+                <div class="secure-checkout-badge">
+                    <i class="fas fa-lock"></i> Secure Checkout
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="ecgo-checkout-main-content">
+        <div class="container">
+            <h1 class="ecgo-checkout-title">Checkout</h1>
+
+            <div class="ecgo-checkout-grid">
+                <!-- Left Column: Shipping & Payment Forms -->
+                <div class="ecgo-checkout-forms">
+                    <section class="checkout-section ecgo-shipping-details">
+                        <h2>Shipping Details</h2>
+                        <div class="shipping-address-summary">
+                            <p><strong>Daniel Hecker</strong><br>
+                            Vasagatan 16<br>
+                            111 20 Stockholm<br>
+                            Sweden</p>
+                            <p>daniel@bambora.com</p>
+                            <a href="#" class="change-address-link">Change Address</a>
+                        </div>
+                        <!-- OR, if address is not pre-filled: -->
+                        <!-- 
+                        <form id="shipping-form">
+                            <div class="form-row">
+                                <div class="form-group half-width">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" name="first-name" required>
+                                </div>
+                                <div class="form-group half-width">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" name="last-name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address1">Address Line 1</label>
+                                <input type="text" id="address1" name="address1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address2">Address Line 2 (Optional)</label>
+                                <input type="text" id="address2" name="address2">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group half-width">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group half-width">
+                                    <label for="postal-code">Postal Code</label>
+                                    <input type="text" id="postal-code" name="postal-code" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select id="country" name="country" required>
+                                    <option value="KE">Kenya</option>
+                                    <option value="SE">Sweden</option>
+                                    <option value="US">United States</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-shipping">Email Address</label>
+                                <input type="email" id="email-shipping" name="email-shipping" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-shipping">Phone Number (Optional)</label>
+                                <input type="tel" id="phone-shipping" name="phone-shipping">
+                            </div>
+                        </form>
+                        -->
+                    </section>
+
+                    <section class="checkout-section ecgo-payment-details">
+                        <h2>Payment Details</h2>
+                        <form id="payment-form">
+                            <div class="form-group">
+                                <label for="card-name">Name on Card</label>
+                                <input type="text" id="card-name" name="card-name" placeholder="Daniel Hecker" required>
+                            </div>
+                            <div class="form-group card-number-group">
+                                <label for="card-number">Card Number</label>
+                                <input type="text" id="card-number" name="card-number" placeholder="4534 5555 5555 5555" required>
+                                <span class="card-type-icon"><i class="fab fa-cc-visa"></i></span> <!-- JS can update this -->
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group half-width">
+                                    <label for="expiry-date">Valid Through</label>
+                                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group half-width cvc-group">
+                                    <label for="cvc">CVC Code</label>
+                                    <input type="text" id="cvc" name="cvc" placeholder="123" required>
+                                    <span class="cvc-info-icon"><i class="fas fa-info-circle"></i></span>
+                                </div>
+                            </div>
+                             <!-- Add other payment options like M-Pesa if applicable -->
+                            <div class="form-group payment-options-mpesa" style="margin-top:20px; display: none;">
+                                <!-- Placeholder for M-Pesa or other local payments -->
+                                <label>Pay with M-Pesa</label>
+                                <p style="font-size:0.9em; color: var(--text-muted);">Instructions for M-Pesa payment will be provided.</p>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg ecgo-purchase-btn">Purchase 537.00 KSh</button>
+                            <!-- The amount should be dynamically updated by JS -->
+                        </form>
+                    </section>
+                </div>
+
+                <!-- Right Column: Order Summary -->
+                <aside class="ecgo-order-summary">
+                    <div class="order-summary-header">
+                        <h3>Your Order</h3>
+                        <a href="cart.html" class="edit-bag-link">Edit Shopping Bag</a>
+                    </div>
+                    <ul class="order-items-list">
+                        <li class="order-item">
+                            <img src="images/merch-tshirt-blue-thumb1.jpg" alt="Blue Sky Tee" class="item-thumbnail">
+                            <div class="item-details">
+                                <span class="item-name">Blue Sky Signature Tee</span>
+                                <span class="item-variant">1 Week Subscription</span> <!-- Or Size: M, Color: Blue -->
+                            </div>
+                            <span class="item-quantity">2</span>
+                            <span class="item-price">KSh 2,500</span>
+                        </li>
+                        <li class="order-item">
+                            <img src="images/merch-waterbottle-thumb.jpg" alt="Water Bottle" class="item-thumbnail">
+                            <div class="item-details">
+                                <span class="item-name">Adventure Water Bottle</span>
+                                <span class="item-variant">Durable Edition</span>
+                            </div>
+                            <span class="item-quantity">1</span>
+                            <span class="item-price">KSh 1,800</span>
+                        </li>
+                        <!-- Add more items dynamically from cart -->
+                    </ul>
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span id="checkoutSubtotal">KSh 6,800</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Shipping</span>
+                            <span id="checkoutShipping">KSh 300</span> <!-- Or "FREE" -->
+                        </div>
+                         <div class="total-row tax-row" style="display: none;"> <!-- Show if applicable -->
+                            <span>Taxes (VAT 16%)</span>
+                            <span id="checkoutTaxes">KSh 1,136</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Total</span>
+                            <strong id="checkoutTotal">KSh 7,100</strong>
+                        </div>
+                    </div>
+                    <div class="gift-code-section">
+                        <button class="btn btn-outline-secondary ecgo-gift-code-btn">Add Gift Code</button>
+                        <!-- Input field can appear on click -->
+                        <form id="gift-code-form" style="display:none; margin-top:10px;">
+                            <input type="text" placeholder="Enter gift code" style="width: 70%; padding: 8px; border-radius: var(--border-radius); border: 1px solid #ddd;">
+                            <button type="submit" class="btn btn-sm" style="padding: 8px 10px;">Apply</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Minimal Footer for Checkout -->
+    <footer class="checkout-footer-ecgo">
+        <div class="container">
+            <p>© <span id="currentYearCheckout"></span> Blue Sky Kenya. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYearCheckout').textContent = new Date().getFullYear();
+
+        // Basic Gift Code Toggle
+        const giftCodeBtn = document.querySelector('.ecgo-gift-code-btn');
+        const giftCodeForm = document.getElementById('gift-code-form');
+        if (giftCodeBtn && giftCodeForm) {
+            giftCodeBtn.addEventListener('click', function() {
+                giftCodeForm.style.display = giftCodeForm.style.display === 'none' ? 'block' : 'none';
+                this.style.display = 'none'; // Hide button once form is shown
+            });
+        }
+
+        // Placeholder: Update total on purchase button dynamically
+        // In a real app, this would come from cart calculations
+        const checkoutTotalElement = document.getElementById('checkoutTotal');
+        const purchaseBtn = document.querySelector('.ecgo-purchase-btn');
+        if (checkoutTotalElement && purchaseBtn) {
+            purchaseBtn.textContent = `Purchase ${checkoutTotalElement.textContent}`;
+        }
+
+        // Placeholder: Card type detection (very basic)
+        const cardNumberInput = document.getElementById('card-number');
+        const cardTypeIcon = document.querySelector('.card-type-icon i');
+        if (cardNumberInput && cardTypeIcon) {
+            cardNumberInput.addEventListener('input', function() {
+                let firstDigit = this.value.charAt(0);
+                if (firstDigit === '4') {
+                    cardTypeIcon.className = 'fab fa-cc-visa';
+                } else if (firstDigit === '5') {
+                    cardTypeIcon.className = 'fab fa-cc-mastercard';
+                } else if (this.value.startsWith('34') || this.value.startsWith('37')) {
+                    cardTypeIcon.className = 'fab fa-cc-amex';
+                } else {
+                    cardTypeIcon.className = 'fas fa-credit-card'; // Default
+                }
+            });
+        }
+
+        // Mobile Menu (If using the standard site header, otherwise remove if header is truly minimal)
+        // const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        // const navLinks = document.querySelector('.nav-links');
+        // if (mobileMenuToggle && navLinks) { /* ... copy from other pages ... */ }
+    </script>
+</body>
+</html>

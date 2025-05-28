@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Blue Sky Kenya Merchandise</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct! -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Optional: Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="shop-page">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <span>📍 Location: Nairobi, Kenya</span>
+                <span>✉️ Email: info@blueskykenya.org</span>
+                <span>📞 Phone: +254 700 000 000</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="get-involved.html#volunteer" class="volunteer-link">Become a Volunteer</a>
+                <span class="lang-switcher">EN ⌄</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container main-nav">
+            <a href="index.html" class="logo">BlueSky<span>Kenya</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Departments <span class="arrow">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="department-climb.html">Climb</a></li>
+                        <li><a href="department-camp.html">Camp BlueSky</a></li>
+                        <li><a href="department-expedition.html">Expedition</a></li>
+                        <li><a href="department-teamdev.html">Team Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="shop.html" class="active">Shop</a></li> <!-- Active Shop Link -->
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <span class="search-icon">🔍</span> <!-- Could be a link to shop search -->
+                <a href="cart.html" class="cart-icon-nav"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <a href="donate.html" class="btn btn-primary nav-donate-btn">Book an Adventure</a>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Shop Hero Section (Tactiko Inspired) -->
+        <section class="shop-hero tactiko-hero-style" style="background-image: url('images/shop-hero-bg.jpg');">
+            <!-- Ensure 'images/shop-hero-bg.jpg' exists -->
+            <div class="tactiko-hero-overlay"></div>
+            <div class="tactiko-hero-content container">
+                <h1>Gear Up For Adventure</h1>
+                <p>Official Blue Sky Kenya merchandise. Support our mission with every purchase.</p>
+                <a href="#new-arrivals" class="btn btn-primary btn-tactiko-hero">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Optional: Sales/Promo Bar -->
+        <div class="tactiko-promo-bar">
+            <div class="container">
+                <span>🔥 Limited Time: Get 15% OFF on all T-Shirts! Use code: BLUEADVENTURE</span>
+                <a href="shop-category-tshirts.html" class="promo-link">Shop T-Shirts <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- 2. "New Arrivals" Product Grid -->
+        <section id="new-arrivals" class="product-grid-section section-padding">
+            <div class="container">
+                <div class="section-header tactiko-section-header">
+                    <h2>New Arrivals</h2>
+                    <p>Check out the latest gear and apparel.</p>
+                </div>
+                <div class="grid-4 tactiko-product-grid">
+                    <!-- Product Card Example (Repeat 4-8 times for this section) -->
+                    <div class="tactiko-product-card">
+                        <div class="product-card-image">
+                            <a href="product-details-tshirt.html"><img src="images/merch-tshirt-blue.jpg" alt="Blue Sky Kenya T-Shirt"></a>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <div class="product-card-actions">
+                                <button class="btn btn-primary btn-sm quick-add-btn">Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="product-card-content">
+                            <h3 class="product-title"><a href="product-details-tshirt.html">Blue Sky Kenya Signature Tee</a></h3>
+                            <p class="product-category">Apparel</p>
+                            <div class="product-price">KSh 2,500</div>
+                            <!-- Optional: <div class="product-rating"><i class="fas fa-star"></i> ... </div> -->
+                        </div>
+                    </div>
+                    <div class="tactiko-product-card">
+                        <div class="product-card-image">
+                            <a href="product-details-bottle.html"><img src="images/merch-waterbottle.jpg" alt="Adventure Water Bottle"></a>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <div class="product-card-actions">
+                                <button class="btn btn-primary btn-sm quick-add-btn">Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="product-card-content">
+                            <h3 class="product-title"><a href="product-details-bottle.html">Adventure Water Bottle</a></h3>
+                            <p class="product-category">Gear</p>
+                            <div class="product-price">KSh 1,800</div>
+                        </div>
+                    </div>
+                    <div class="tactiko-product-card">
+                        <div class="product-card-image">
+                            <a href="product-details-cap.html"><img src="images/merch-cap.jpg" alt="Explorer Cap"></a>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <div class="product-card-actions">
+                                <button class="btn btn-primary btn-sm quick-add-btn">Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="product-card-content">
+                            <h3 class="product-title"><a href="product-details-cap.html">Blue Sky Explorer Cap</a></h3>
+                            <p class="product-category">Headwear</p>
+                            <div class="product-price">KSh 1,500</div>
+                        </div>
+                    </div>
+                    <div class="tactiko-product-card">
+                        <div class="product-card-image">
+                            <a href="product-details-hoodie.html"><img src="images/merch-hoodie.jpg" alt="Cozy Camp Hoodie"></a>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <div class="product-card-actions">
+                                <button class="btn btn-primary btn-sm quick-add-btn">Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="product-card-content">
+                            <h3 class="product-title"><a href="product-details-hoodie.html">Cozy Camp Hoodie</a></h3>
+                            <p class="product-category">Apparel</p>
+                            <div class="product-price">KSh 4,500</div>
+                        </div>
+                    </div>
+                    <!-- Repeat for more new arrivals -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. "Deal of the Day" / Featured Product Section -->
+        <section class="deal-of-day-section tactiko-deal-section section-padding bg-light">
+            <div class="container">
+                <div class="grid-2-deal">
+                    <div class="deal-image">
+                        <img src="images/merch-backpack-featured.jpg" alt="Featured Expedition Backpack">
+                        <!-- Make sure 'images/merch-backpack-featured.jpg' exists -->
+                    </div>
+                    <div class="deal-content">
+                        <span class="sub-heading orange-text">DEAL OF THE WEEK</span>
+                        <h2>Expedition Ready Backpack</h2>
+                        <p class="deal-description">Durable, spacious, and comfortable. Perfect for your next big adventure. Get it now with a special discount!</p>
+                        <div class="deal-price">
+                            <span class="original-price">KSh 7,000</span>
+                            <span class="discounted-price">KSh 5,950</span>
+                        </div>
+                        <div class="deal-countdown">
+                            <span>30</span> Days : <span>23</span> Hrs : <span>55</span> Min : <span>56</span> Sec
+                        </div>
+                        <a href="product-details-backpack.html" class="btn btn-secondary">Shop This Deal</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. "Popular & Trending" / Another Product Grid -->
+        <section class="product-grid-section section-padding">
+            <div class="container">
+                <div class="section-header tactiko-section-header">
+                    <h2>Popular & Trending</h2>
+                    <p>Our community's favorite picks.</p>
+                    <a href="shop-category-popular.html" class="btn btn-outline-dark-tactiko btn-sm">See All Popular</a>
+                </div>
+                <div class="grid-4 tactiko-product-grid">
+                    <!-- Repeat .tactiko-product-card 4-8 times for this section -->
+                    <div class="tactiko-product-card">
+                        <div class="product-card-image">
+                            <a href="product-details-mug.html"><img src="images/merch-mug.jpg" alt="Campfire Mug"></a>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <div class="product-card-actions">
+                                <button class="btn btn-primary btn-sm quick-add-btn">Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="product-card-content">
+                            <h3 class="product-title"><a href="product-details-mug.html">Enamel Campfire Mug</a></h3>
+                            <p class="product-category">Drinkware</p>
+                            <div class="product-price">KSh 1,200</div>
+                        </div>
+                    </div>
+                    <div class="tactiko-product-card">
+                        <div class="product-card-image">
+                            <a href="product-details-journal.html"><img src="images/merch-journal.jpg" alt="Adventure Journal"></a>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <div class="product-card-actions">
+                                <button class="btn btn-primary btn-sm quick-add-btn">Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="product-card-content">
+                            <h3 class="product-title"><a href="product-details-journal.html">Adventure Journal & Pen</a></h3>
+                            <p class="product-category">Stationery</p>
+                            <div class="product-price">KSh 1,600</div>
+                        </div>
+                    </div>
+                    <!-- ... Add more popular products ... -->
+                     <div class="tactiko-product-card">
+                        <div class="product-card-image">
+                            <a href="product-details-patch.html"><img src="images/merch-patch-set.jpg" alt="Adventure Patch Set"></a>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <div class="product-card-actions">
+                                <button class="btn btn-primary btn-sm quick-add-btn">Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="product-card-content">
+                            <h3 class="product-title"><a href="product-details-patch.html">Adventure Patch Set</a></h3>
+                            <p class="product-category">Accessories</p>
+                            <div class="product-price">KSh 800</div>
+                        </div>
+                    </div>
+                     <div class="tactiko-product-card">
+                        <div class="product-card-image">
+                            <a href="product-details-buff.html"><img src="images/merch-buff.jpg" alt="Multifunctional Headwear"></a>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <div class="product-card-actions">
+                                <button class="btn btn-primary btn-sm quick-add-btn">Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="product-card-content">
+                            <h3 class="product-title"><a href="product-details-buff.html">Multifunctional Headwear</a></h3>
+                            <p class="product-category">Headwear</p>
+                            <div class="product-price">KSh 1,000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Category Links Section (Tactiko Inspired) -->
+        <section class="shop-categories-tactiko section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Browse by Category</h2>
+                </div>
+                <div class="tactiko-category-links">
+                    <a href="shop-category-apparel.html">Apparel</a>
+                    <a href="shop-category-gear.html">Outdoor Gear</a>
+                    <a href="shop-category-headwear.html">Headwear</a>
+                    <a href="shop-category-drinkware.html">Drinkware</a>
+                    <a href="shop-category-accessories.html">Accessories</a>
+                    <a href="shop-category-climb.html">Climb Collection</a>
+                    <a href="shop-category-camp.html">Camp Collection</a>
+                    <a href="shop-category-expedition.html">Expedition Series</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Newsletter/Signup Banner -->
+        <section class="newsletter-banner-tactiko section-padding" style="background-image: url('images/newsletter-bg.jpg');">
+            <!-- Ensure 'images/newsletter-bg.jpg' exists -->
+            <div class="tactiko-newsletter-overlay"></div>
+            <div class="container text-center newsletter-banner-content">
+                <h2>Sign Up For The Latest News and Offers</h2>
+                <p>Be the first to know about new arrivals, special promotions, and Blue Sky Kenya updates.</p>
+                <form class="tactiko-inline-newsletter">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="new-footer">
+        <!-- ... Footer content remains the same ... -->
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h4>BlueSky<span>Kenya</span></h4>
+                <p>Transformative outdoor experiences and team development programs in Kenya.</p>
+                 <div class="social-links-footer">
+                    <a href="#" aria-label="Facebook">FB</a> <a href="#" aria-label="Twitter">TW</a> <a href="#" aria-label="Instagram">IN</a> <a href="#" aria-label="LinkedIn">LI</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Shop Links</h4> <!-- Updated for shop -->
+                <ul>
+                    <li><a href="shop-category-apparel.html">Apparel</a></li>
+                    <li><a href="shop-category-gear.html">Gear</a></li>
+                    <li><a href="returns-policy.html">Returns Policy</a></li>
+                    <li><a href="faq-shop.html">Shop FAQ</a></li>
+                    <li><a href="account.html">My Account</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <p>123 Adventure Rd, Nairobi, Kenya</p>
+                <p>Email: info@blueskykenya.org</p>
+                <p>Phone: +254 700 000 000</p>
+            </div>
+            <div class="footer-column">
+                <h4>Stay Updated</h4>
+                <p>Get news on upcoming trips, events & special offers.</p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" placeholder="Your Email Address" name="email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="currentYear"></span> Blue Sky Kenya. All Rights Reserved. Your Adventure Awaits.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ... All previous JavaScript (Dynamic Year, Mobile Menu, Smooth Scroll for Hero Button if needed, Slideshow if any other page uses it) ...
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileMenuToggle && navLinks) {
+            mobileMenuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                mobileMenuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+            });
+        }
+        const dropdowns = document.querySelectorAll('.nav-links .dropdown > a');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', function(event) {
+                if (window.innerWidth < 769 && this.nextElementSibling && this.nextElementSibling.classList.contains('dropdown-content')) {
+                     event.preventDefault();
+                     this.nextElementSibling.classList.toggle('show');
+                }
+            });
+        });
+
+        // Smooth scroll for hero button if it links to an ID on the page
+        const shopHeroBtn = document.querySelector('.btn-tactiko-hero[href="#new-arrivals"]');
+        if(shopHeroBtn) {
+            shopHeroBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetElement = document.querySelector('#new-arrivals');
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        }
+
+        // Countdown Timer for Deal of the Day (Basic Example)
+        // Replace with a more robust library for production
+        function startDealCountdown() {
+            const countdownElement = document.querySelector('.deal-countdown');
+            if (!countdownElement) return;
+
+            // Example: Countdown to a date 2 days from now
+            const countdownDate = new Date().getTime() + (2 * 24 * 60 * 60 * 1000); 
+
+            const interval = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownElement.innerHTML = `<span>${days}</span> Days : <span>${hours}</span> Hrs : <span>${minutes}</span> Min : <span>${seconds}</span> Sec`;
+
+                if (distance < 0) {
+                    clearInterval(interval);
+                    countdownElement.innerHTML = "DEAL EXPIRED";
+                }
+            }, 1000);
+        }
+        startDealCountdown();
+
+        // Wishlist button toggle (simple example)
+        const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+        wishlistBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const heartIcon = this.querySelector('i');
+                if (this.classList.contains('active')) {
+                    heartIcon.classList.remove('far'); // far for outline
+                    heartIcon.classList.add('fas'); // fas for solid
+                    // Add to wishlist logic here
+                } else {
+                    heartIcon.classList.remove('fas');
+                    heartIcon.classList.add('far');
+                    // Remove from wishlist logic here
+                }
+            });
+        });
+
+
+    </script>
+</body>
+</html>

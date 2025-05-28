@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Blue Sky Kenya</title>
+    <link rel="stylesheet" href="style.css"> <!-- Main stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Optional: Font Awesome for icons -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+<body class="about-page"> <!-- Class for potential page-specific overrides if needed -->
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <span>📍 Location: Nairobi, Kenya</span>
+                <span>✉️ Email: info@blueskykenya.org</span>
+                <span>📞 Phone: +254 700 000 000</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="get-involved.html#volunteer" class="volunteer-link">Become a Volunteer</a>
+                <span class="lang-switcher">EN ⌄</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container main-nav">
+            <a href="index.html" class="logo">BlueSky<span>Kenya</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Departments <span class="arrow">▼</span></a> <!-- Changed from "Our Work" to match other pages -->
+                    <ul class="dropdown-content">
+                        <li><a href="department-climb.html">Climb</a></li>
+                        <li><a href="department-camp.html">Camp</a></li>
+                        <li><a href="department-expedition.html">Expedition</a></li>
+                        <li><a href="department-teamdev.html">Team Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="resources.html">Resources</a></li> <!-- Changed from "Stories" -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <span class="search-icon">🔍</span>
+                <a href="donate.html" class="btn btn-primary nav-donate-btn">Book an Adventure</a> <!-- Changed from "Donate Now" -->
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Hero Section -->
+        <section class="about-hero gn-hero-style" style="background-image: url('images/placeholder-about-hero.jpg');">
+            <!-- Ensure 'images/placeholder-about-hero.jpg' exists or update path -->
+            <div class="gn-hero-overlay"></div>
+            <div class="gn-hero-content container">
+                <span class="gn-hero-tagline">Get to Know Us</span>
+                <h1>The Heart of Blue Sky Kenya</h1>
+                <p>Discover our mission, our values, and the dedicated efforts driving transformative outdoor experiences and community empowerment in Kenya.</p>
+                <a href="#our-values" class="btn btn-primary">Our Core Values</a>
+            </div>
+        </section>
+
+        <!-- Values/Approach Section -->
+        <section id="our-values" class="values-approach-section gn-dark-section section-padding">
+            <div class="container">
+                <div class="section-header text-center"> <!-- Added a general section header for consistency -->
+                    <h2 style="color: var(--text-light);">Our Guiding Principles</h2>
+                    <p style="color: #ccc;">The philosophy that shapes every adventure and initiative we undertake.</p>
+                </div>
+                <div class="grid-3"> <!-- This will use the global .grid-3 style -->
+                    <div class="value-card">
+                        <div class="icon-placeholder">🎯</div> <!-- Using emoji as placeholder -->
+                        <h3>Our Mission</h3>
+                        <p>To provide transformative outdoor experiences and team development programs that foster personal growth, environmental stewardship, and community spirit in Kenya.</p>
+                        <a href="mission-details.html" class="btn-link-light">Learn More</a>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon-placeholder">🌟</div> <!-- Using emoji as placeholder -->
+                        <h3>Our Vision</h3>
+                        <p>A Kenya where individuals and communities are empowered through challenging adventures, connected to nature, and equipped with skills for life.</p>
+                        <a href="vision-details.html" class="btn-link-light">Learn More</a>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon-placeholder">🤝</div> <!-- Using emoji as placeholder -->
+                        <h3>Our Core Values</h3>
+                        <p>Adventure, Integrity, Community, Sustainability, and Empowerment guide every action we take and decision we make.</p>
+                        <a href="values-details.html" class="btn-link-light">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two-Column Info Section -->
+        <section class="about-info-blocks section-padding bg-light">
+            <div class="container">
+                <div class="grid-2-col-info">
+                    <div class="info-block block-story" style="background-image: url('images/placeholder-story-bg.jpg');">
+                        <!-- Ensure 'images/placeholder-story-bg.jpg' exists or update path -->
+                        <div class="info-block-content">
+                            <h3>Our Journey & Story</h3>
+                            <span class="title-divider"></span>
+                            <p>Founded in [Year], Blue Sky Kenya was born from a passion for the outdoors and a belief in its power to transform. From local climbs to expansive expeditions, we've grown by sharing our love for adventure and fostering community.</p>
+                            <a href="full-story.html" class="btn btn-primary">Read Our Full Story</a>
+                        </div>
+                    </div>
+                    <div class="info-block block-team" style="background-image: url('images/placeholder-team-bg.jpg');">
+                        <!-- Ensure 'images/placeholder-team-bg.jpg' exists or update path -->
+                        <div class="info-block-content">
+                            <h3>Meet Our Dedicated Team</h3>
+                            <span class="title-divider"></span>
+                            <p>Our strength lies in our people – a passionate group of experienced guides, instructors, and support staff united by a common goal: to provide safe, enriching, and unforgettable outdoor experiences.</p>
+                            <a href="team.html" class="btn btn-secondary">Meet The Team</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Highlights Section -->
+        <section class="impact-highlights-about section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-heading orange-text">Our Achievements</span> <!-- This will be blue due to CSS variable change -->
+                    <h2>Making a Tangible Difference</h2>
+                    <p>A glimpse into the positive impact and memorable experiences we've facilitated.</p>
+                </div>
+                <div class="impact-cards-grid grid-3"> <!-- Changed to grid-3 for better display of 3-4 items -->
+                    <div class="impact-card-about">
+                        <img src="images/placeholder-impact-skill.jpg" alt="Skill Development Impact"> <!-- Replace with actual images -->
+                        <div class="impact-card-about-content">
+                            <h4>Skill Development</h4>
+                            <p>Over 1,000 individuals trained in climbing, camping, and wilderness skills.</p>
+                            <span class="stat-highlight">1000+ Trained</span>
+                        </div>
+                    </div>
+                    <div class="impact-card-about">
+                        <img src="images/placeholder-impact-expedition.jpg" alt="Expeditions Impact">
+                        <div class="impact-card-about-content">
+                            <h4>Successful Expeditions</h4>
+                            <p>Led 50+ expeditions to Kenya's iconic peaks and natural wonders.</p>
+                            <span class="stat-highlight">50+ Expeditions</span>
+                        </div>
+                    </div>
+                    <div class="impact-card-about">
+                        <img src="images/placeholder-impact-teamdev.jpg" alt="Team Development Impact">
+                        <div class="impact-card-about-content">
+                            <h4>Team Empowerment</h4>
+                            <p>Facilitated team development programs for over 200 corporate and community groups.</p>
+                            <span class="stat-highlight">200+ Teams</span>
+                        </div>
+                    </div>
+                    <!-- You can add a fourth card if needed, or keep it at three for a cleaner look with grid-3 -->
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="department-climb.html" class="btn btn-primary">Explore Our Adventures</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="new-footer">
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h4>BlueSky<span>Kenya</span></h4>
+                <p>Transformative outdoor experiences and team development programs in Kenya.</p>
+                 <div class="social-links-footer">
+                    <a href="#" aria-label="Facebook">FB</a> <a href="#" aria-label="Twitter">TW</a> <a href="#" aria-label="Instagram">IN</a> <a href="#" aria-label="LinkedIn">LI</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4> <!-- Changed from "Explore" -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="department-climb.html">Climb Department</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4> <!-- Changed from "Contact" -->
+                <p>123 Adventure Rd, Nairobi, Kenya</p>
+                <p>Email: info@blueskykenya.org</p>
+                <p>Phone: +254 700 000 000</p>
+            </div>
+            <div class="footer-column">
+                <h4>Stay Updated</h4>
+                <p>Get news on upcoming trips, events & special offers.</p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" placeholder="Your Email Address" name="email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="currentYear"></span> Blue Sky Kenya. All Rights Reserved. Your Adventure Awaits.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileMenuToggle && navLinks) {
+            mobileMenuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                mobileMenuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+            });
+        }
+
+        const dropdowns = document.querySelectorAll('.nav-links .dropdown > a');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', function(event) {
+                if (window.innerWidth < 769 && this.nextElementSibling && this.nextElementSibling.classList.contains('dropdown-content')) {
+                     event.preventDefault();
+                     this.nextElementSibling.classList.toggle('show');
+                }
+            });
+        });
+
+        // Smooth scroll for "Our Core Values" button
+        const learnMoreBtn = document.querySelector('.about-hero .btn-primary');
+        if(learnMoreBtn && learnMoreBtn.getAttribute('href') === '#our-values') {
+            learnMoreBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetElement = document.querySelector('#our-values');
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        }
+    </script>
+</body>
+</html>

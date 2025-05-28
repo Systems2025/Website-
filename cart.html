@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Blue Sky Kenya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="cart-page levis-layout"> <!-- Page-specific class -->
+
+    <!-- Header (Adapted BR.F style or your standard header) -->
+    <header class="brf-main-header"> <!-- Using BR.F header for consistency -->
+        <div class="container brf-header-container">
+            <a href="index.html" class="logo brf-logo">BlueSky<span>Kenya</span></a>
+            <nav class="brf-main-nav">
+                <ul>
+                    <li><a href="shop-category-apparel.html">Apparel</a></li>
+                    <li><a href="shop-category-gear.html">Gear</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li> <!-- Assuming Shop is active -->
+                    <li><a href="shop-sale.html" class="sale-link">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="brf-header-actions">
+                <form class="brf-search-form">
+                    <input type="search" placeholder="Search products...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <a href="cart.html" class="brf-action-icon active" aria-label="Shopping Cart"> <!-- Cart icon active -->
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="brf-cart-count">3</span> <!-- Example: 3 items -->
+                </a>
+                <a href="wishlist.html" class="brf-action-icon" aria-label="Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <a href="account.html" class="brf-action-icon" aria-label="My Account">
+                    <i class="far fa-user-circle"></i>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle brf-mobile-toggle">☰</button>
+        </nav>
+    </header>
+
+    <main class="levis-cart-main-content">
+        <div class="container">
+            <div class="levis-cart-header">
+                <h1>Shopping cart items</h1>
+                <button class="levis-close-cart-btn" onclick="window.location.href='shop.html'">×</button>
+                 <!-- Or link back to previous page -->
+            </div>
+
+            <div class="levis-cart-layout">
+                <!-- Cart Items List -->
+                <div class="levis-cart-items-column">
+                    <div class="levis-cart-item-header-row">
+                        <span class="header-product">Product</span>
+                        <span class="header-color">Color</span>
+                        <span class="header-size">Size</span>
+                        <span class="header-amount">Amount</span>
+                        <span class="header-price">Price</span>
+                        <span></span> <!-- Empty for remove action alignment -->
+                    </div>
+
+                    <!-- Cart Item 1 -->
+                    <div class="levis-cart-item">
+                        <div class="levis-item-product">
+                            <img src="images/merch-tshirt-blue-thumb1.jpg" alt="Blue Sky Signature Tee">
+                            <div>
+                                <a href="product-detail-tshirt.html" class="item-name">Blue Sky Signature Tee</a>
+                                <span class="item-variant">Comfort Fit</span>
+                            </div>
+                        </div>
+                        <div class="levis-item-color">Ocean Blue</div>
+                        <div class="levis-item-size">M</div>
+                        <div class="levis-item-amount">
+                            <button class="quantity-btn minus-btn">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus-btn">+</button>
+                        </div>
+                        <div class="levis-item-price">KSh 2,500.00</div>
+                        <div class="levis-item-actions">
+                            <button class="item-action-btn remove-item"><i class="fas fa-trash-alt"></i> Remove</button>
+                            <button class="item-action-btn move-to-fav"><i class="far fa-heart"></i> Favorite</button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="levis-cart-item">
+                        <div class="levis-item-product">
+                            <img src="images/merch-hoodie-thumb.jpg" alt="Cozy Camp Hoodie">
+                            <div>
+                                <a href="product-detail-hoodie.html" class="item-name">Cozy Camp Hoodie</a>
+                                <span class="item-variant">Fleece Lined</span>
+                            </div>
+                        </div>
+                        <div class="levis-item-color">Heather Grey</div>
+                        <div class="levis-item-size">L</div>
+                        <div class="levis-item-amount">
+                            <button class="quantity-btn minus-btn">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus-btn">+</button>
+                        </div>
+                        <div class="levis-item-price">KSh 4,500.00</div>
+                        <div class="levis-item-actions">
+                            <button class="item-action-btn remove-item"><i class="fas fa-trash-alt"></i> Remove</button>
+                            <button class="item-action-btn move-to-fav"><i class="far fa-heart"></i> Favorite</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Cart Item 3 -->
+                    <div class="levis-cart-item">
+                        <div class="levis-item-product">
+                            <img src="images/merch-waterbottle-thumb.jpg" alt="Adventure Water Bottle">
+                            <div>
+                                <a href="product-detail-bottle.html" class="item-name">Adventure Water Bottle</a>
+                                <span class="item-variant">Stainless Steel</span>
+                            </div>
+                        </div>
+                        <div class="levis-item-color">Matte Black</div>
+                        <div class="levis-item-size">-</div> <!-- N/A for size -->
+                        <div class="levis-item-amount">
+                            <button class="quantity-btn minus-btn">-</button>
+                            <input type="number" value="2" min="1" class="quantity-input">
+                            <button class="quantity-btn plus-btn">+</button>
+                        </div>
+                        <div class="levis-item-price">KSh 1,800.00</div> <!-- Price per item -->
+                        <div class="levis-item-actions">
+                            <button class="item-action-btn remove-item"><i class="fas fa-trash-alt"></i> Remove</button>
+                            <button class="item-action-btn move-to-fav"><i class="far fa-heart"></i> Favorite</button>
+                        </div>
+                    </div>
+                    <!-- Add more cart items here -->
+                </div>
+
+                <!-- Order Summary Column -->
+                <aside class="levis-cart-summary">
+                    <h3>Summary</h3>
+                    <div class="summary-row">
+                        <span>Total products:</span>
+                        <span id="cartSubtotal">KSh 10,600.00</span> <!-- JS should calculate this -->
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping costs:</span>
+                        <span id="cartShipping">Free</span> <!-- Or calculated value -->
+                    </div>
+                    <div class="promocode-section">
+                        <a href="#" id="addPromocodeLink">Add promocode <i class="fas fa-chevron-right"></i></a>
+                        <form id="promocodeForm" style="display: none; margin-top: 10px;">
+                            <input type="text" placeholder="Enter promocode" class="promocode-input">
+                            <button type="submit" class="btn btn-sm apply-promocode-btn">Apply</button>
+                        </form>
+                    </div>
+                    <hr class="summary-divider">
+                    <div class="summary-row total-row">
+                        <span>Total:</span>
+                        <strong id="cartTotal">KSh 10,600.00</strong> <!-- JS should calculate this -->
+                    </div>
+                    <a href="checkout.html" class="btn btn-primary levis-checkout-btn">CHECKOUT</a>
+                </aside>
+            </div>
+
+            <div class="levis-cart-footer-actions">
+                <button class="footer-action-btn"><i class="fas fa-save"></i> Save payment</button>
+                <button class="footer-action-btn"><i class="fas fa-truck"></i> Free delivery & returns*</button>
+                <button class="footer-action-btn"><i class="fas fa-headset"></i> Full support</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Minimal Footer for Cart (or reuse main footer) -->
+    <footer class="new-footer minimal-footer" style="padding-top: 30px; padding-bottom: 30px;">
+        <div class="container">
+            <p class="text-center" style="font-size: 0.9rem;">© <span id="currentYearCart"></span> Blue Sky Kenya. Secure Shopping.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYearCart').textContent = new Date().getFullYear();
+        // Mobile menu (copy from other pages if using standard header)
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle.brf-mobile-toggle');
+        const mainNav = document.querySelector('.brf-main-nav');
+        if (mobileMenuToggle && mainNav) {
+            // ... (mobile menu JS from product detail page)
+            mobileMenuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+            });
+        }
+
+        // Promocode toggle
+        const promocodeLink = document.getElementById('addPromocodeLink');
+        const promocodeForm = document.getElementById('promocodeForm');
+        if (promocodeLink && promocodeForm) {
+            promocodeLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                promocodeForm.style.display = promocodeForm.style.display === 'none' ? 'flex' : 'none';
+            });
+        }
+
+        // Placeholder for quantity updates and total calculation (requires more JS)
+        // Example:
+        // function updateCartTotals() {
+        //     let subtotal = 0;
+        //     document.querySelectorAll('.levis-cart-item').forEach(item => {
+        //         const priceText = item.querySelector('.levis-item-price').textContent;
+        //         const price = parseFloat(priceText.replace('KSh ', '').replace(',', ''));
+        //         const quantity = parseInt(item.querySelector('.quantity-input').value);
+        //         subtotal += price * quantity; // Note: Price in HTML is item price, not total for line
+        //     });
+        //     document.getElementById('cartSubtotal').textContent = `KSh ${subtotal.toFixed(2)}`;
+        //     // Add shipping calculation logic here
+        //     document.getElementById('cartTotal').textContent = `KSh ${subtotal.toFixed(2)}`; // Simplified total
+        //     document.querySelector('.brf-cart-count').textContent = document.querySelectorAll('.levis-cart-item').length;
+        // }
+        // updateCartTotals(); // Initial call
+
+        // document.querySelectorAll('.quantity-btn, .quantity-input, .remove-item').forEach(el => {
+        //     el.addEventListener('click', updateCartTotals); // Or more specific event like 'change' for input
+        //     el.addEventListener('change', updateCartTotals);
+        // });
+    </script>
+</body>
+</html>

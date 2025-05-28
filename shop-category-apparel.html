@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparel - Blue Sky Kenya Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="category-page footballsport-layout"> <!-- Page-specific class -->
+
+    <!-- Header (Using BR.F style header for consistency or your standard header) -->
+    <header class="brf-main-header">
+        <div class="container brf-header-container">
+            <a href="index.html" class="logo brf-logo">BlueSky<span>Kenya</span></a>
+            <nav class="brf-main-nav">
+                <ul>
+                    <li><a href="shop-category-apparel.html" class="active">Apparel</a></li>
+                    <li><a href="shop-category-gear.html">Gear</a></li>
+                    <li><a href="shop-category-climb.html">Climb</a></li>
+                    <li><a href="shop-category-camp.html">Camp</a></li>
+                    <li><a href="shop.html">New</a></li>
+                    <li><a href="shop-sale.html" class="sale-link">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="brf-header-actions">
+                <form class="brf-search-form">
+                    <input type="search" placeholder="Search products...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <a href="cart.html" class="brf-action-icon" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i><span class="brf-cart-count">0</span></a>
+                <a href="wishlist.html" class="brf-action-icon" aria-label="Wishlist"><i class="far fa-heart"></i></a>
+                <a href="account.html" class="brf-action-icon" aria-label="My Account"><i class="far fa-user-circle"></i></a>
+            </div>
+            <button class="mobile-menu-toggle brf-mobile-toggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Optional: Sub-Navigation Bar (like the orange bar in example) -->
+    <nav class="footballsport-sub-nav">
+        <div class="container">
+            <ul>
+                <li><a href="shop-category-apparel.html#tshirts" class="active">T-Shirts</a></li>
+                <li><a href="shop-category-apparel.html#hoodies">Hoodies</a></li>
+                <li><a href="shop-category-apparel.html#headwear">Headwear</a></li>
+                <li><a href="shop-category-apparel.html#new">New Apparel</a></li>
+                <li><a href="shop-category-apparel.html#sale">Sale Apparel</a></li>
+                <!-- Add more sub-categories -->
+            </ul>
+        </div>
+    </nav>
+
+    <main class="footballsport-category-main-content">
+        <div class="container">
+            <div class="footballsport-breadcrumbs">
+                <a href="index.html">Home</a> <i class="fas fa-angle-right"></i>
+                <a href="shop.html">Shop</a> <i class="fas fa-angle-right"></i>
+                <span>Apparel</span>
+            </div>
+
+            <div class="footballsport-category-layout">
+                <!-- Left Sidebar: Filters -->
+                <aside class="footballsport-sidebar">
+                    <div class="filter-header">
+                        <h3>PRODUCTS (128) <span style="font-weight:normal; text-transform:none;">Filter By</span></h3>
+                        <button class="clear-filters-btn">Clear Filters <i class="fas fa-times"></i></button>
+                    </div>
+
+                    <div class="filter-group">
+                        <button class="filter-group-toggle">Category <span class="toggle-icon">-</span></button>
+                        <div class="filter-options open">
+                            <label class="filter-option active">
+                                Apparel <span class="remove-filter-x">×</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category-main" value="gear"> Gear
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category-main" value="accessories"> Accessories
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <button class="filter-group-toggle">Type <span class="toggle-icon">+</span></button>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="type[]" value="tshirt"> T-Shirts (45)</label>
+                            <label><input type="checkbox" name="type[]" value="hoodie"> Hoodies (20)</label>
+                            <label><input type="checkbox" name="type[]" value="cap"> Caps & Hats (30)</label>
+                            <label><input type="checkbox" name="type[]" value="jacket"> Jackets (15)</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <button class="filter-group-toggle">Collection <span class="toggle-icon">+</span></button>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="collection[]" value="climb"> Climb Series</label>
+                            <label><input type="checkbox" name="collection[]" value="camp"> Camp BlueSky Edition</label>
+                            <label><input type="checkbox" name="collection[]" value="expedition"> Expedition Pro</label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <button class="filter-group-toggle">Color <span class="toggle-icon">+</span></button>
+                        <div class="filter-options color-swatches">
+                            <button class="color-swatch-filter" style="background-color: #0072BC;" data-color="blue" aria-label="Blue"></button>
+                            <button class="color-swatch-filter" style="background-color: #28a745;" data-color="green" aria-label="Green"></button>
+                            <button class="color-swatch-filter" style="background-color: #343a40;" data-color="black" aria-label="Black"></button>
+                            <button class="color-swatch-filter" style="background-color: #dc3545;" data-color="red" aria-label="Red"></button>
+                            <button class="color-swatch-filter" style="background-color: #ffc107;" data-color="yellow" aria-label="Yellow"></button>
+                            <button class="color-swatch-filter" style="background-color: #6c757d;" data-color="grey" aria-label="Grey"></button>
+                            <button class="color-swatch-filter" style="background-color: #fff; border: 1px solid #ccc;" data-color="white" aria-label="White"></button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <button class="filter-group-toggle">Price Range <span class="toggle-icon">+</span></button>
+                        <div class="filter-options price-range-filter">
+                            <input type="number" placeholder="Min KSh" id="price-min">
+                            <span>-</span>
+                            <input type="number" placeholder="Max KSh" id="price-max">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary apply-filters-btn">SHOW RESULTS</button>
+                </aside>
+
+                <!-- Right Content: Product Grid -->
+                <div class="footballsport-product-listing">
+                    <div class="listing-header">
+                        <h2>Apparel</h2>
+                        <div class="sort-by-container">
+                            <label for="sort-products">Sort by:</label>
+                            <select id="sort-products" name="sort-products">
+                                <option value="default">Default</option>
+                                <option value="popularity">Popularity</option>
+                                <option value="price_asc">Price: Low to High</option>
+                                <option value="price_desc">Price: High to Low</option>
+                                <option value="newest">Newest Arrivals</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid-4 footballsport-product-grid">
+                        <!-- Product Card Example (Using Tactiko card style, can be adapted) -->
+                        <!-- Repeat this card structure for 12-20 products -->
+                        <div class="tactiko-product-card footballsport-style-card"> <!-- Added footballsport-style-card -->
+                            <div class="product-card-image">
+                                <a href="product-detail-tshirt.html"><img src="images/merch-tshirt-blue.jpg" alt="Blue Sky Signature Tee"></a>
+                                <span class="product-tag new">NEW</span>
+                                <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-card-content">
+                                <h3 class="product-title"><a href="product-detail-tshirt.html">Blue Sky Signature Tee</a></h3>
+                                <p class="product-subtitle-fs">Men's Training Shirt</p> <!-- Subtitle like example -->
+                                <div class="product-price">KSh 2,500</div>
+                                <span class="product-colors-fs">3 Colors</span>
+                                <a href="product-detail-tshirt.html" class="product-quick-view-fs">View Details <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="tactiko-product-card footballsport-style-card">
+                            <div class="product-card-image">
+                                <a href="product-detail-hoodie.html"><img src="images/merch-hoodie.jpg" alt="Cozy Camp Hoodie"></a>
+                                <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-card-content">
+                                <h3 class="product-title"><a href="product-detail-hoodie.html">Cozy Camp Hoodie</a></h3>
+                                <p class="product-subtitle-fs">Unisex Fleece Hoodie</p>
+                                <div class="product-price">KSh 4,500</div>
+                                <span class="product-colors-fs">2 Colors</span>
+                                 <a href="product-detail-hoodie.html" class="product-quick-view-fs">View Details <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="tactiko-product-card footballsport-style-card">
+                            <div class="product-card-image">
+                                <a href="product-detail-cap.html"><img src="images/merch-cap.jpg" alt="Explorer Cap"></a>
+                                <span class="product-tag promo">PROMO</span>
+                                <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-card-content">
+                                <h3 class="product-title"><a href="product-detail-cap.html">Explorer Cap</a></h3>
+                                <p class="product-subtitle-fs">Adjustable Outdoor Cap</p>
+                                <div class="product-price">KSh 1,500</div>
+                                <span class="product-colors-fs">4 Colors</span>
+                                <a href="product-detail-cap.html" class="product-quick-view-fs">View Details <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="tactiko-product-card footballsport-style-card">
+                            <div class="product-card-image">
+                                <a href="product-detail-jacket.html"><img src="images/merch-jacket.jpg" alt="Windbreaker Jacket"></a>
+                                <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-card-content">
+                                <h3 class="product-title"><a href="product-detail-jacket.html">Trail Windbreaker</a></h3>
+                                <p class="product-subtitle-fs">Lightweight Packable Jacket</p>
+                                <div class="product-price">KSh 3,800</div>
+                                <span class="product-colors-fs">1 Color</span>
+                                 <a href="product-detail-jacket.html" class="product-quick-view-fs">View Details <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Add more product cards to reach ~20 total -->
+                    </div>
+
+                    <nav class="footballsport-pagination">
+                        <a href="#" class="page-arrow disabled"><i class="fas fa-angle-left"></i></a>
+                        <a href="#" class="page-number active">1</a>
+                        <a href="#" class="page-number">2</a>
+                        <a href="#" class="page-number">3</a>
+                        <span>...</span>
+                        <a href="#" class="page-number">8</a>
+                        <a href="#" class="page-arrow"><i class="fas fa-angle-right"></i></a>
+                        <span class="pagination-info">NEXT 12 PRODUCTS FROM 128</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Copy from other pages) -->
+    <footer class="new-footer"> /* ... */ </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        // Mobile menu (copy from previous pages)
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle.brf-mobile-toggle');
+        const mainNav = document.querySelector('.brf-main-nav');
+        if (mobileMenuToggle && mainNav) {
+            mobileMenuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+            });
+        }
+
+        // Filter Group Toggle
+        const filterGroupToggles = document.querySelectorAll('.filter-group-toggle');
+        filterGroupToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const optionsDiv = this.nextElementSibling;
+                const icon = this.querySelector('.toggle-icon');
+                optionsDiv.classList.toggle('open');
+                if (optionsDiv.classList.contains('open')) {
+                    optionsDiv.style.maxHeight = optionsDiv.scrollHeight + "px";
+                    icon.textContent = '-';
+                } else {
+                    optionsDiv.style.maxHeight = null;
+                    icon.textContent = '+';
+                }
+            });
+        });
+
+        // Color Swatch Filter Selection (Visual Only)
+        const colorSwatches = document.querySelectorAll('.color-swatch-filter');
+        colorSwatches.forEach(swatch => {
+            swatch.addEventListener('click', function() {
+                this.classList.toggle('selected');
+                // Add actual filtering logic here
+            });
+        });
+
+    </script>
+</body>
+</html>
